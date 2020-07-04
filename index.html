@@ -46,6 +46,12 @@
   /* Display a point marker with pop-up text */
   L.marker([41.77, -72.69]).addTo(map) // EDIT latitude, longitude to re-position marker
   .bindPopup("This is a PopUp box"); // EDIT pop-up text message
+	  
+/* Control panel to display map layers */
+ var controlLayers = L.control.layers( null, null, {
+  position: "topright",
+  collapsed: false
+ }).addTo(map);
 
   </script>
 </body>
